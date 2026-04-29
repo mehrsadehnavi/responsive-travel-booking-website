@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Train Reservation</title>
+  <link rel="stylesheet" type="text/css" href="Train-submit.css">
+</head>
+<body>
+  <div id="forms-container">
+    <form id="form-template" class="guest-form">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required><br>
+      
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required><br>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br>
+      
+      <label for="date-of-birth">Date of Birth:</label>
+      <input type="date" id="date-of-birth" name="date-of-birth" required><br>
+      
+      <label for="national-id">National ID:</label>
+      <input type="text" id="national-id" name="national-id" pattern="[0-9]{10}" required><br>
+      
+      <label for="phone-number">Phone Number:</label>
+      <input type="text" id="phone-number" name="phone-number" pattern="[0-9]{11}" required><br>
+    </form>
+    <div id="buttons-container">
+      <button id="add-button">Add Form</button>
+      <button id="submit-button">Submit</button>
+    </div>
+  </div>
+  
+  <script src="Train-submit.js"></script>
+</body>
+</html>

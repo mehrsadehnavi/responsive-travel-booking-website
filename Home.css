@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lora;
+}
+
+header {
+  background-color: #19253b59;
+  box-shadow: 0 0 36px 0;
+  backdrop-filter: blur(3px);
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  padding: 1.2rem 0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(25, 37, 59, 0.5); /* set the background color of the nav bar with transparency */
+  z-index: 999;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+li {
+  padding: 0rem 1.1rem;
+  float: left;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .7px;
+}
+
+li a:hover {
+  color: #91b2ff;
+  transition: all .3s ease-in-out
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+  margin-right: 20px;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button a:hover {
+  color: black;
+}
+
+.button button {
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: .5rem 1rem;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: #fff;
+  color: #152939;
+  transition: all .3s ease-in-out;
+}
+
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.slider {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  animation: slide 60s infinite;
+}
+
+.slider img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: center; /* Change alignment to center */
+  }
+
+  li {
+      padding: 0.8rem 0.5rem;
+      text-align: center; /* Center align the li items */
+  }
+
+  .button {
+      margin-right: 10px;
+      justify-content: center; /* Center align the buttons */
+  }
+}
+
+  
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    
+    20% {
+      transform: translateX(0);
+    }
+    
+    25% {
+      transform: translateX(-25%);
+    }
+    
+    45% {
+      transform: translateX(-25%);
+    }
+    
+    50% {
+      transform: translateX(-50%);
+    }
+    
+    70% {
+      transform: translateX(-50%);
+    }
+    
+    75% {
+      transform: translateX(-75%);
+    }
+    
+    95% {
+      transform: translateX(-75%);
+    }
+    
+    100% {
+      transform: translateX(0);
+    }
+}
+  
